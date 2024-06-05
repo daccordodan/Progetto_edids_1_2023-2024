@@ -16,8 +16,10 @@ public interface HCollection{
         //Returns true if this collection contains the specified element.
     public boolean containsAll(Collection c);
         //Returns true if this collection contains all of the elements in the specified collection.
+    @Override
     public boolean equals(Object o);
         //Compares the specified object with this collection for equality.
+    @Override
     public int hashCode();
         //Returns the hash code value for this collection.
     public boolean isEmpty();
