@@ -1,5 +1,6 @@
 package org.unipd.myAdapter;
 
+
 public interface HIterator{
     boolean hasNext();
         //Returns true if the iteration has more elements.

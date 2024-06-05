@@ -1,6 +1,7 @@
 package org.unipd.myAdapter;
 
-public interface HListIterator{
+
+public interface HListIterator extends HIterator{
     void add(Object o);
         //Inserts the specified element into the list (optional operation).
     boolean hasNext();
