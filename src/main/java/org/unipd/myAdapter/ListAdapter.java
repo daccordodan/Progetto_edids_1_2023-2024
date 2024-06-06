@@ -1,4 +1,12 @@
 package org.unipd.myAdapter;
+/**
+ * ListAdapter, as the name says, is the adapter between {@link Vector} class anche List interface (or better {@link HList}).
+ * <p>That class is part of the Adapter design pattern.
+ * 
+ * @version 1.0
+ * @author dacco
+ */
+
 
 import java.util.Vector;
 
@@ -9,7 +17,7 @@ public class ListAdapter extends Object implements HList{
 
     public ListAdapter(){
         list=new Vector();
-    }
+    }   
 
     @Override
     public void add(int index, Object element) {

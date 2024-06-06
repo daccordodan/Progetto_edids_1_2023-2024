@@ -3,7 +3,7 @@ package org.unipd.myAdapter;
  * <p>An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration, 
  * and obtain the iterator's current position in the list. A {@code ListIterator} has no current element; its cursor position always lies between 
  * the element that would be returned by a call to {@code previous()} and the element that would be returned by a call to {@code next()}. In a list of length {@code n}, 
- * there are {@code n+1} valid index values, from {@code 0} to {@code n}, inclusive.</p>
+ * there are {@code n+1} valid index values, from {@code 0} to {@code n}, inclusive.
  * 
  * {@code
  *           Element(0)   Element(1)   Element(2)   ... Element(n)   
@@ -11,7 +11,7 @@ package org.unipd.myAdapter;
  *  Index: 0            1            2            3               n+1
  * }
  *  
- * <p>Note that the {@code remove()} and {@code set(Object)} methods are not defined in terms of the cursor position; they are defined to operate on the last element returned by a call to {@code next()} or {@code previous()}.</p>
+ * <p>Note that the {@code remove()} and {@code set(Object)} methods are not defined in terms of the cursor position; they are defined to operate on the last element returned by a call to {@code next()} or {@code previous()}.
  * 
  * @author dacco
  */

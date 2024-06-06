@@ -5,7 +5,7 @@ package org.unipd.myAdapter;
  * <li>Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.</li>
  * <li>Method names have been improved.</li>
  * <ul>
- * </p>
+ * 
  * @author dacco
  */
 
