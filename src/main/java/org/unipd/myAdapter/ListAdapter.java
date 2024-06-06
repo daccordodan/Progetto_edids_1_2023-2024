@@ -3,7 +3,7 @@ package org.unipd.myAdapter;
 import java.util.Vector;
 
 
-public class ListAdapter implements HList{
+public class ListAdapter extends Object implements HList{
 
     private Vector list;
 
