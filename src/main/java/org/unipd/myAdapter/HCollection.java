@@ -1,7 +1,7 @@
 package org.unipd.myAdapter;
 
 /**
-  * <p>The root interface in the collection hierarchy. A collection represents a group of objects, known as its elements.  
+  * <p>An adaptation of Collection interface for this project. The root interface in the collection hierarchy. A collection represents a group of objects, known as its elements.  
   * Some collections allow duplicate elements and others do not. Some are ordered and others unordered. 
   * The SDK does not provide any direct implementations of this interface: 
   * it provides implementations of more specific subinterfaces like Set and List.

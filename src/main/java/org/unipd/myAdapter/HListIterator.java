@@ -1,6 +1,9 @@
 package org.unipd.myAdapter;
+
+import java.util.NoSuchElementException;
+
 /**
- * <p>An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration, 
+ * <p>An adaptation of ListIterator interface for this project. An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration, 
  * and obtain the iterator's current position in the list. A {@code ListIterator} has no current element; its cursor position always lies between 
  * the element that would be returned by a call to {@code previous()} and the element that would be returned by a call to {@code next()}. In a list of length {@code n}, 
  * there are {@code n+1} valid index values, from {@code 0} to {@code n}, inclusive.
@@ -17,7 +20,18 @@ package org.unipd.myAdapter;
  */
 
 public interface HListIterator extends HIterator{
-    void add(Object o);
+    /**
+     * Inserts the specified element into the list (optional operation). The element is inserted immediately before the next element that would 
+     * be returned by {@code next}, if any, and after the next element that would be returned by {@code previous}, if any. 
+     * (If the list contains no elements, the new element becomes the sole element on the list.) 
+     * The new element is inserted before the implicit cursor: a subsequent call to next would be unaffected, and a subsequent call to 
+     * {@code previous} would return the new element. (This call increases by one the value that would be returned by a call to {@code nextIndex} or {@code previousIndex}.)
+     * @param o - the element to insert.
+     * @throws UnsupportedOperationException - if the add method is not supported by this list iterator.
+     * @throws ClassCastException - if the class of the specified element prevents it from being added to this list.
+     * @throws ClassCastException - if some aspect of this element prevents it from being added to this list.
+     */
+    void add(Object o) throws UnsupportedOperationException,ClassCastException;
 
     /**
      * Returns {@code true} if this list iterator has more elements when traversing the list in the reverse direction. (In other words, returns {@code true} if {@code previous} would return an element rather than throwing an exception.)
